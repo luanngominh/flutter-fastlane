@@ -1,4 +1,4 @@
-ARG BASE_IMAGE="circleci/android:api-30"
+ARG BASE_IMAGE="circleci/android:api-23"
 
 FROM $BASE_IMAGE
 

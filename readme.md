@@ -3,6 +3,7 @@ Build android app and distribution to firebase distribution.
 * Android SDK
 * Flluter
 * Fastlane
+* Firebase
 
 
 ## Reference

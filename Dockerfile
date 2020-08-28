@@ -31,4 +31,5 @@ RUN gem install json -v '2.3.1'
 RUN chown circleci:circleci $ANDROID_HOME
 RUN chown circleci:circleci $FLUTTER_ROOT
 
+RUN curl -sL https://firebase.tools | bash
 ENV PATH=$PATH:/home/circleci/.rubies/ruby-2.6.1/bin

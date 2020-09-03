@@ -32,7 +32,7 @@ RUN flutter packages get
 
 RUN gem install json -v '2.3.1'
 
-RUN apt install jq
+RUN apt install -y \ jq
 
 RUN curl -sL https://firebase.tools | bash
 ENV PATH=$PATH:/home/circleci/.rubies/ruby-2.6.1/bin

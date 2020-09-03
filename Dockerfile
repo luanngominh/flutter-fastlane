@@ -28,7 +28,8 @@ RUN flutter doctor -v
 
 RUN gem install json -v '2.3.1'
 
-RUN apt install -y jq
+RUN wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O jq
+RUN mv jq /usr/local/bin && chmod +x /usr/local/bin/jq
 
 RUN curl -sL https://firebase.tools | bash
 ENV PATH=$PATH:/home/circleci/.rubies/ruby-2.6.1/bin

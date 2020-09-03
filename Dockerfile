@@ -26,10 +26,6 @@ RUN yes "y" | flutter doctor --android-licenses
 # Perform a doctor run.
 RUN flutter doctor -v
 
-RUN flutter clean
-
-RUN flutter packages get
-
 RUN gem install json -v '2.3.1'
 
 RUN apt install -y jq
